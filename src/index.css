@@ -1,0 +1,48 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+img {
+  display: block;
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background-color: lightblue;
+}
+
+figure.qr-code {
+  width: 16rem;
+  padding: 0.7rem;
+  background: #fff;
+  border-radius: 1rem;
+  box-shadow: 0.3rem 0.6rem 0.6rem lightgrey;
+}
+
+figure.qr-code img {
+  width: 100%;
+  border-radius: 0.5rem;
+}
+
+figure.qr-code p {
+  padding: 0rem 0.3rem;
+  margin: 1rem 0rem;
+  text-align: center;
+  font-size: 0.8rem;
+  color: grey;
+}
+
+figure.qr-code p strong {
+  font-weight: 700;
+  font-size: 1rem;
+  color: black;
+}
