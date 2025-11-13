@@ -1,15 +1,24 @@
+@font-face {
+  font-family: Outfit;
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400 700;
+  src: url("../public/fonts/Outfit-VariableFont_wght.ttf");
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
 }
 
-html,
-body {
+html {
   height: 100%;
+  font-family: Outfit;
+  font-size: 15px;
 }
 
-img {
-  display: block;
+body {
+  height: 100%;
 }
 
 #root {
@@ -17,32 +26,42 @@ img {
   justify-content: center;
   align-items: center;
   height: 100%;
-  background-color: lightblue;
+  background-color: hsl(212, 45%, 89%);
 }
 
 figure.qr-code {
-  width: 16rem;
-  padding: 0.7rem;
-  background: #fff;
-  border-radius: 1rem;
-  box-shadow: 0.3rem 0.6rem 0.6rem lightgrey;
+  padding: 16px;
+  padding-bottom: 40px;
+  background-color: #fff;
+  border-radius: 20px;
 }
 
 figure.qr-code img {
-  width: 100%;
-  border-radius: 0.5rem;
+  display: block;
+  width: 288px;
+  height: 288px;
+  border-radius: 10px;
+}
+
+figure.qr-code figcaption {
+  width: 288px;
+  margin-top: 24px;
+  padding: 0 16px;
 }
 
 figure.qr-code p {
-  padding: 0rem 0.3rem;
-  margin: 1rem 0rem;
+  margin-top: 16px;
   text-align: center;
-  font-size: 0.8rem;
-  color: grey;
+  font-weight: 400;
+  line-height: 140%;
+  letter-spacing: 0.2px;
+  color: hsl(216, 15%, 48%);
 }
 
 figure.qr-code p strong {
+  font-size: 22px;
   font-weight: 700;
-  font-size: 1rem;
-  color: black;
+  line-height: 120%;
+  letter-spacing: 0;
+  color: hsl(218, 44%, 22%);
 }
